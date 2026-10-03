@@ -1,0 +1,104 @@
+{
+  "optimal_k": 5,
+  "feature_cols": [
+    "population_density",
+    "avg_household_income",
+    "competitor_count",
+    "footfall_estimate",
+    "rental_cost",
+    "transport_accessibility"
+  ],
+  "feature_labels": {
+    "population_density": "Pop Density (people/km\u00b2)",
+    "avg_household_income": "Avg Income ($/yr)",
+    "competitor_count": "Competitor Count",
+    "footfall_estimate": "Footfall (pedestrians/day)",
+    "rental_cost": "Rental Cost ($/sq ft/mo)",
+    "transport_accessibility": "Transport Score (1-10)"
+  },
+  "pca_explained_variance": [
+    0.6233093323848882,
+    0.28108936598622897
+  ],
+  "cluster_mapping": {
+    "0": "Busy Budget Markets",
+    "1": "Affluent Quiet Suburbs",
+    "2": "Dense Premium City-Centre",
+    "3": "Low-Density Peripherals / Outskirts",
+    "4": "Transit-Hub Commercial Zones"
+  },
+  "cluster_means": {
+    "0": {
+      "population_density": 23018.45108695652,
+      "avg_household_income": 42945.108695652176,
+      "competitor_count": 23.690217391304348,
+      "footfall_estimate": 43590.891304347824,
+      "rental_cost": 48.09697826086956,
+      "transport_accessibility": 8.701630434782608
+    },
+    "1": {
+      "population_density": 4284.21875,
+      "avg_household_income": 148841.25,
+      "competitor_count": 4.0375,
+      "footfall_estimate": 6710.6125,
+      "rental_cost": 77.378975,
+      "transport_accessibility": 5.396875
+    },
+    "2": {
+      "population_density": 18792.676136363636,
+      "avg_household_income": 114497.15909090909,
+      "competitor_count": 18.96590909090909,
+      "footfall_estimate": 36174.89772727273,
+      "rental_cost": 124.58836363636364,
+      "transport_accessibility": 9.153977272727273
+    },
+    "3": {
+      "population_density": 2809.573529411765,
+      "avg_household_income": 49400.0,
+      "competitor_count": 3.0588235294117645,
+      "footfall_estimate": 3829.544117647059,
+      "rental_cost": 21.69245588235294,
+      "transport_accessibility": 3.259558823529412
+    },
+    "4": {
+      "population_density": 12269.979166666666,
+      "avg_household_income": 87004.16666666667,
+      "competitor_count": 15.04861111111111,
+      "footfall_estimate": 53050.875,
+      "rental_cost": 97.57708333333333,
+      "transport_accessibility": 9.70486111111111
+    }
+  },
+  "suitability_notes": {
+    "Dense Premium City-Centre": {
+      "business_persona": "Flagship stores, premium lifestyle apparel, experiential luxury showrooms, specialty food & beverage.",
+      "advantages": "High disposable income, dense foot traffic, exceptional public transit connectivity, prestige brand visibility.",
+      "expansion_considerations": "Substantial rental overhead, intense competitor concentration, restricted store footprint, high customer acquisition costs.",
+      "non_ranking_disclaimer": "Highly attractive for premium branding and margin-heavy categories, but unfavorable for low-margin discount retail."
+    },
+    "Affluent Quiet Suburbs": {
+      "business_persona": "Boutique organic groceries, family healthcare clinics, premium fitness centers, home decor, high-end children's goods.",
+      "advantages": "Affluent residential clientele, lower direct competitor density, high average order values, strong customer loyalty.",
+      "expansion_considerations": "Low daily pedestrian footfall requiring targeted digital marketing, high dependency on personal vehicular transit, moderate rental rates.",
+      "non_ranking_disclaimer": "Ideal for appointment-based or weekly destination shopping, but unsuitable for impulse-driven impulse retail."
+    },
+    "Busy Budget Markets": {
+      "business_persona": "Value fashion, discount grocery supermarkets, quick-service street food, pharmacy chains, consumer electronics accessories.",
+      "advantages": "Massive daily pedestrian volume, strong transit links, moderate rental rates relative to turnover volume.",
+      "expansion_considerations": "High competitor saturation, price-sensitive customer base demanding aggressive discounting, lower basket sizes.",
+      "non_ranking_disclaimer": "Outstanding for high-velocity volume retail, but unsuitable for luxury or high-margin positioning."
+    },
+    "Low-Density Peripherals / Outskirts": {
+      "business_persona": "Big-box home improvement warehouses, wholesale discount outlets, automotive showrooms, bulk distribution centers.",
+      "advantages": "Lowest rental costs per square foot, minimal direct competition, extensive physical space for parking and large floorplans.",
+      "expansion_considerations": "Low organic footfall, low population density, weak public transit access necessitating dedicated highway marketing.",
+      "non_ranking_disclaimer": "Optimal for footprint-intensive destination retail, but unviable for small convenience shops."
+    },
+    "Transit-Hub Commercial Zones": {
+      "business_persona": "Grab-and-go convenience retail, quick-service dining, express coffee kiosks, travel essentials, commuter pharmacies.",
+      "advantages": "Peak daily foot traffic, maximum multimodal transit connectivity, steady recurring commuter flow across all peak hours.",
+      "expansion_considerations": "High rental costs per square foot, compact store footprints, rapid customer transit times requiring swift point-of-sale operations.",
+      "non_ranking_disclaimer": "Superior for fast convenience transactions, but ill-suited for leisurely browse-and-linger retail concepts."
+    }
+  }
+}
